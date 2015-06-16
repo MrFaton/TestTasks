@@ -30,7 +30,7 @@ public class Direction {
 }
 /*
 This bean represents direction (connection or road) between two cities.
-Note: if we have two cities, we must to create two directions:
+Note: if we have two cities and the have double direction connection, we must to create two directions:
 1-st direction: City1 -> City2
 2-nd direction: City2 -> City1
  */

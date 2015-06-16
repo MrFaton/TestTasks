@@ -6,12 +6,9 @@ import com.mr_faton.task2.model.Graph;
 
 import java.util.*;
 
-/**
- * Created by Mr_Faton on 15.06.2015.
- */
 public class WayResolver {
-    private final List<City> cities;
-    private final List<Direction> directions;
+    private final List<City> cities;//all cities
+    private final List<Direction> directions;//all directions between cities
     private Set<City> resolvedCities;
     private Set<City> unResolvedCities;
     private Map<City, City> predecessors;
@@ -22,6 +19,7 @@ public class WayResolver {
         directions = new ArrayList<>(graph.getDirections());
     }
 
+    //this method sets the source city (the leaving city)
     public void initiate(City source) {
         resolvedCities = new HashSet<>();
         unResolvedCities = new HashSet<>();
@@ -110,3 +108,6 @@ public class WayResolver {
         return nearestCity;
     }
 }
+/*
+This class choose the cheapest way between two cities. It's implements Dijkstra’s algorithm.
+ */
