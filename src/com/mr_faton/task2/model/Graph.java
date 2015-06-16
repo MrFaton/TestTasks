@@ -2,9 +2,6 @@ package com.mr_faton.task2.model;
 
 import java.util.List;
 
-/**
- * Created by Mr_Faton on 15.06.2015.
- */
 public class Graph {
     private final List<City> cities;
     private final List<Direction> directions;
@@ -22,3 +19,6 @@ public class Graph {
         return directions;
     }
 }
+/*
+This bean contains all added cities and all added directions between cities
+ */

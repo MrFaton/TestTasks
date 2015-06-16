@@ -1,8 +1,5 @@
 package com.mr_faton.task2.model;
 
-/**
- * Created by Mr_Faton on 15.06.2015.
- */
 public class Direction {
     private final City source;
     private final City destination;
@@ -31,3 +28,9 @@ public class Direction {
         return source + " - " + destination;
     }
 }
+/*
+This bean represents direction (connection or road) between two cities.
+Note: if we have two cities, we must to create two directions:
+1-st direction: City1 -> City2
+2-nd direction: City2 -> City1
+ */

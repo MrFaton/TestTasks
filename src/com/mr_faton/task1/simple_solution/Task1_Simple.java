@@ -45,7 +45,7 @@ public class Task1_Simple {
         //handle every expression
         for (String expression : bracketsExpressions) {
             if (eval(openBracketsCount, expression)) {
-                System.out.println("Satisfying expression: " + expression);
+                System.out.println("Satisfy expression: " + expression);
             }
         }
     }

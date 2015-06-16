@@ -1,6 +1,5 @@
 package com.mr_faton.task2.model;
 
-
 public class City {
     private final int id;
     private final String name;
@@ -46,3 +45,6 @@ public class City {
         return name + "(id:" + id + ")";
     }
 }
+/*
+This bean represents some city
+ */
