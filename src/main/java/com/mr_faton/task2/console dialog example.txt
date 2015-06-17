@@ -1,0 +1,119 @@
+How many cities you wish to add?
+4
+Let's add cities!
+Input city ID:
+1
+Input city name:
+Greenville
+Input city ID:
+2
+Input city name:
+Blueville
+Input city ID:
+3
+Input city name:
+Redville
+Input city ID:
+4
+Input city name:
+Orangeville
+Let's add directions between cities!
+Create new direction
+input source city name:
+Greenville
+input target city name:
+Redville
+input direction cost:
+5
+Create new direction? y/n
+y
+Create new direction
+input source city name:
+Greenville
+input target city name:
+Blueville
+input direction cost:
+2
+Create new direction? y/n
+y
+Create new direction
+input source city name:
+Blueville
+input target city name:
+Greenville
+input direction cost:
+2
+Create new direction? y/n
+y
+Create new direction
+input source city name:
+Blueville
+input target city name:
+Redville
+input direction cost:
+1
+Create new direction? y/n
+y
+Create new direction
+input source city name:
+Blueville
+input target city name:
+Orangeville
+input direction cost:
+5
+Create new direction? y/n
+y
+Create new direction
+input source city name:
+Redville
+input target city name:
+Greenville
+input direction cost:
+5
+Create new direction? y/n
+y
+Create new direction
+input source city name:
+Redville
+input target city name:
+Blueville
+input direction cost:
+1
+Create new direction? y/n
+y
+Create new direction
+input source city name:
+Redville
+input target city name:
+Orangeville
+input direction cost:
+1
+Create new direction? y/n
+y
+Create new direction
+input source city name:
+Orangeville
+input target city name:
+Blueville
+input direction cost:
+5
+Create new direction? y/n
+y
+Create new direction
+input source city name:
+Orangeville
+input target city name:
+Redville
+input direction cost:
+1
+Create new direction? y/n
+n
+Please input source city name:
+Greenville
+Please target source city name:
+Orangeville
+Your path is:
+Greenville -> Blueville -> Redville -> Orangeville
+Your cost is: 4
+
+Process finished with exit code 0
