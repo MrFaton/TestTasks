@@ -6,13 +6,7 @@ import java.util.Collection;
 import java.util.Collections;
 
 public class SumFinder {
-    private final int number;
-
-    public SumFinder(int number) {
-        this.number = number;
-    }
-
-    public final int getFactorialDigitsSum() {
+    public final int getFactorialDigitsSum(final int number) {
         if (number == 0) {
             return 0;
         }
@@ -26,7 +20,7 @@ public class SumFinder {
     }
 
     //calculating factorial
-    private static BigInteger getFactorial(int number) {
+    private static BigInteger getFactorial(final int number) {
         //BigInteger object uses because it can hold value that biggest then 64bit. (Integer up to 32bit, Long up to 64)
         BigInteger result = BigInteger.ONE;
         //starts with 2 because the result already equals 1, so the first step is 1 multiply 2
@@ -37,7 +31,7 @@ public class SumFinder {
     }
 
     //convert factorial to int array where every digit in factorial is an element in array
-    private static Collection<Integer> getFactorialDigits(BigInteger factorial) {
+    private static Collection<Integer> getFactorialDigits(final BigInteger factorial) {
         Collection<Integer> factorialDigits = new ArrayList<>();
         //convert factorial to string
         String factorialStr = factorial.toString();

@@ -16,9 +16,15 @@ public class BracketsResolver {
         this.bracketsCollection = bracketsCollection;
     }
 
+    //method witch returns right expressions
     public final Collection<String> getSatisfyExpressions() {
         Collection<String> resultCollection = new ArrayList<>();
+        //check every expression
         for (String expression : bracketsCollection) {
+            /*
+            if the result of checking if true (it means the expression corresponds to the condition) so
+            add the expression to the result collection
+             */
             if (checkExpression(expression)) {
                 resultCollection.add(expression);
             }
@@ -26,6 +32,7 @@ public class BracketsResolver {
         return Collections.unmodifiableCollection(resultCollection);
     }
 
+    //method for checking expression
     private boolean checkExpression(String expression) {
         //if condition is false then it's means user input not correct expression and answer is false
         if (expression.startsWith(BRACKET_OPEN) && expression.endsWith(BRACKET_CLOSE)) {

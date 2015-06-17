@@ -31,7 +31,7 @@ public class InputHelper {
         return result;
     }
 
-    public final Collection<String> getDataStringCollection(String invite) {
+    public final Collection<String> getStringDataCollection(String invite) {
         System.out.println(invite + " " + INPUT_STOP_MESSAGE);
         Collection<String> collection = new ArrayList<>();
         while (true) {
@@ -42,5 +42,15 @@ public class InputHelper {
             collection.add(text);
         }
         return Collections.unmodifiableCollection(collection);
+    }
+
+    public final String getStringData(String invite) {
+        System.out.println(invite);
+        String text = scanner.next();
+        return text;
+    }
+
+    public final void closeInput() {
+        scanner.close();
     }
 }

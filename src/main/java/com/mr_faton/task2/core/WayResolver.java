@@ -52,6 +52,12 @@ public class WayResolver {
         return path;
     }
 
+    public int getCost(City destCity) {
+        return distance.get(destCity);
+    }
+
+    //service methods
+
     private void findMinimalDistance(City city) {
         List<City> neighborCites = getNeighbors(city);
         for (City destCity : neighborCites) {
@@ -109,5 +115,5 @@ public class WayResolver {
     }
 }
 /*
-This class choose the cheapest way between two cities. It's implements Dijkstra’s algorithm.
+This class choose the cheapest way between two cities. It's implements Dijkstraï¿½s algorithm.
  */

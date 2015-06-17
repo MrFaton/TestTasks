@@ -1,4 +1,4 @@
-package task2;
+package task3;
 
 import com.mr_faton.task3.core.SumFinder;
 import org.junit.Test;
@@ -23,10 +23,11 @@ public class TestSumFinder {
         correctAswers.add(27);
         correctAswers.add(648);
 
-        for (int i = 0; i < numbers.size(); i++) {
-            SumFinder sumFinder = new SumFinder(numbers.get(i));
-            Integer result = sumFinder.getFactorialDigitsSum();
-            assertEquals("Not equals", correctAswers.get(i), result);
+        SumFinder sumFinder = new SumFinder();
+
+        for (int currentNumber = 0; currentNumber < numbers.size(); currentNumber++) {
+            Integer result = sumFinder.getFactorialDigitsSum(numbers.get(currentNumber));
+            assertEquals("Not equals", correctAswers.get(currentNumber), result);
         }
     }
 }
