@@ -12,14 +12,14 @@
 
     <properties>
         <compiler.version>1.7</compiler.version>
-        <spring.version>4.1.6.RELEASE</spring.version>
+        <junit.version>4.12</junit.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit.version}</version>
         </dependency>
     </dependencies>
 
@@ -29,13 +29,16 @@
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-clean-plugin</artifactId>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <configuration>
                         <source>${compiler.version}</source>
                         <target>${compiler.version}</target>
                     </configuration>
                 </plugin>
-
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
