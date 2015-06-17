@@ -4,12 +4,13 @@ import com.mr_faton.task2.core.WayResolver;
 import com.mr_faton.task2.model.City;
 import com.mr_faton.task2.model.Direction;
 import com.mr_faton.task2.model.Graph;
-
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class TestWayResolver {
     @Test

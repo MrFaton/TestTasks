@@ -2,11 +2,12 @@ package task1;
 
 import com.mr_faton.task1.core.BracketsResolver;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
+
+import static org.junit.Assert.*;
 
 public class TestBracketsResolver {
     @Test
